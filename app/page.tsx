@@ -888,7 +888,7 @@ export default function AIBusinessLaunchPage() {
         {/* ===== HERO — DARK TEAL ===== */}
         <section className="ra-hero">
           <nav className="ra-nav">
-            <a href="#" className="ra-logo">
+            <a href="https://paystack.shop/pay/vn0s8y05bm" className="ra-logo">
               <span className="ra-logo-mark">R</span>
               Renovate Africa
             </a>
@@ -896,7 +896,7 @@ export default function AIBusinessLaunchPage() {
               <a href="#solution">The System</a>
               <a href="#team">Our Story</a>
               <a href="#faq">FAQ</a>
-              <a href="#checkout" className="ra-nav-cta">Get Access</a>
+              <a href="https://paystack.shop/pay/vn0s8y05bm" className="ra-nav-cta">Get Access</a>
             </div>
           </nav>
 
@@ -970,7 +970,7 @@ export default function AIBusinessLaunchPage() {
               <h3>Start With the Free Checklist</h3>
               <p>Get the "Abuja Business Website Checklist" — 27 things your site needs before you spend ₦1 on ads. Plus a preview of Template #1.</p>
               <div className="ra-email-form">
-                <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="email" placeholder="renovateafrica234@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <button onClick={() => setShowLeadMagnet(true)}>Send My Checklist</button>
               </div>
               {showLeadMagnet && (
@@ -1134,7 +1134,7 @@ export default function AIBusinessLaunchPage() {
               <button className={currency === "USD" ? "active" : ""} onClick={() => setCurrency("USD")}>🌍 International — $99.99</button>
             </div>
 
-            <a href="#" className="ra-cta-btn" style={{ fontSize: '1.1rem', padding: '20px 48px' }}>
+            <a href="https://paystack.shop/pay/vn0s8y05bm" className="ra-cta-btn" style={{ fontSize: '1.1rem', padding: '20px 48px' }}>
               {p.btn} — {p.new} →
             </a>
 
