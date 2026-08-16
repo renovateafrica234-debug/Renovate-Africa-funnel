@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ra-teal: #004D40;
+  --ra-cream: #F5F1E8;
+  --ra-lemon: #D4E157;
+  --ra-charcoal: #2B2B29;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ra-cream);
+  color: var(--ra-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(0, 77, 64, 0.2);
+  color: var(--ra-charcoal);
+}
+
