@@ -1,13 +1,23 @@
 import crypto from 'crypto';
 
-export function verifyToken(token: string): boolean {
+export interface TokenPayload {
+  email: string;
+  reference?: string;
+  timestamp?: number;
+}
+
+export function verifyToken(token: string): TokenPayload | null {
   try {
-    const [payload, sig] = token.split('.');
-    if (!payload || !sig) return false;
+    const [payloadBase64, sig] = token.split('.');
+    if (!payloadBase64 || !sig) return null;
     const secret = process.env.PAYSTACK_SECRET_KEY || 'fallback-secret';
-    const expected = crypto.createHmac('sha256', secret).update(payload).digest('hex');
-    return crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected));
+    const expected = crypto.createHmac('sha256', secret).update(payloadBase64).digest('hex');
+    if (!crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) {
+      return null;
+    }
+    const decoded = Buffer.from(payloadBase64, 'base64').toString('utf-8');
+    return JSON.parse(decoded) as TokenPayload;
   } catch {
-    return false;
+    return null;
   }
 }
