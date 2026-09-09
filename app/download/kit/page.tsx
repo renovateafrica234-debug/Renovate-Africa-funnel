@@ -341,3 +341,76 @@ export default function EnhancedKitPage() {
     </>
   );
 }
+inBottom: '20px', lineHeight: '1.5' }}>
+                  Eliminate database management and user accounts. Delivery is authorized via cryptographic signatures using your private secret key.
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', textAlign: 'center' }}>
+                  <div style={{ backgroundColor: '#00382E', border: '1px solid rgba(212, 225, 87, 0.2)', padding: '14px 10px', borderRadius: '10px' }}>
+                    <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#D4E157', fontWeight: '700', marginBottom: '4px' }}>STEP 01</div>
+                    <div style={{ fontWeight: '700', fontSize: '13px', color: '#FFFFFF' }}>Payment</div>
+                    <div style={{ fontSize: '10px', opacity: '0.7', marginTop: '2px' }}>Paystack event</div>
+                  </div>
+
+                  <div style={{ backgroundColor: '#00382E', border: '1px solid rgba(212, 225, 87, 0.2)', padding: '14px 10px', borderRadius: '10px' }}>
+                    <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#D4E157', fontWeight: '700', marginBottom: '4px' }}>STEP 02</div>
+                    <div style={{ fontWeight: '700', fontSize: '13px', color: '#FFFFFF' }}>HMAC Sign</div>
+                    <div style={{ fontSize: '10px', opacity: '0.7', marginTop: '2px' }}>Secret key mint</div>
+                  </div>
+
+                  <div style={{ backgroundColor: '#00382E', border: '1px solid rgba(212, 225, 87, 0.2)', padding: '14px 10px', borderRadius: '10px' }}>
+                    <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#D4E157', fontWeight: '700', marginBottom: '4px' }}>STEP 03</div>
+                    <div style={{ fontWeight: '700', fontSize: '13px', color: '#FFFFFF' }}>Edge Match</div>
+                    <div style={{ fontSize: '10px', opacity: '0.7', marginTop: '2px' }}>Constant-time test</div>
+                  </div>
+
+                  <div style={{ backgroundColor: '#00382E', border: '1px solid rgba(212, 225, 87, 0.2)', padding: '14px 10px', borderRadius: '10px' }}>
+                    <div style={{ fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#D4E157', fontWeight: '700', marginBottom: '4px' }}>STEP 04</div>
+                    <div style={{ fontWeight: '700', fontSize: '13px', color: '#FFFFFF' }}>Unlock</div>
+                    <div style={{ fontSize: '10px', opacity: '0.7', marginTop: '2px' }}>Gated access</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Launch Verification Checklist */}
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid rgba(0,77,64,0.15)', paddingBottom: '10px', marginBottom: '14px' }}>
+                <h2 style={{ fontFamily: "'Cinzel', serif", fontSize: '18px', fontWeight: '700', color: '#004D40' }}>
+                  04 / Go-Live Verification Checklist
+                </h2>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#004D40', opacity: '0.6' }}>Production Ready</span>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', backgroundColor: '#FFFFFF', padding: '12px 16px', borderRadius: '8px', fontSize: '12px', border: '1px solid rgba(0,77,64,0.1)' }}>
+                  <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#D4E157', color: '#004D40', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '10px' }}>✓</div>
+                  <span>Paystack live secret &amp; public keys added</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', backgroundColor: '#FFFFFF', padding: '12px 16px', borderRadius: '8px', fontSize: '12px', border: '1px solid rgba(0,77,64,0.1)' }}>
+                  <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#D4E157', color: '#004D40', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '10px' }}>✓</div>
+                  <span>Vercel production domain mapped to DNS</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', backgroundColor: '#FFFFFF', padding: '12px 16px', borderRadius: '8px', fontSize: '12px', border: '1px solid rgba(0,77,64,0.1)' }}>
+                  <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#D4E157', color: '#004D40', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '10px' }}>✓</div>
+                  <span>Webhook endpoint tested with real payload</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', backgroundColor: '#FFFFFF', padding: '12px 16px', borderRadius: '8px', fontSize: '12px', border: '1px solid rgba(0,77,64,0.1)' }}>
+                  <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#D4E157', color: '#004D40', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '10px' }}>✓</div>
+                  <span>Launch copy assets posted to distribution channels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Page 2 */}
+          <div style={{ borderTop: '1px solid rgba(0,77,64,0.2)', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', fontFamily: "'Space Mono', monospace", fontSize: '10px', color: '#004D40' }}>
+            <div>WE DON'T FOLLOW. WE RENOVATE.</div>
+            <div>PAGE 02 / 02</div>
+          </div>
+        </div>
+
+      </div>
+    </>
+  );
+}
